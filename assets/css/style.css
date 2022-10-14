@@ -66,7 +66,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 10px;
+    padding: 20px;
 }
 
 .cover-album {
@@ -87,6 +87,22 @@ audio {
     width: 90%;
 }
 
+
+.card-text {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.card {
+    margin: 20px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
 
 audio::-webkit-media-controls-play-button,
 audio::-webkit-media-controls-panel {
