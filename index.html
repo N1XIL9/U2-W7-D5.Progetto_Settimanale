@@ -23,11 +23,36 @@
     </header>
      <nav class="navbar">
         <div class="container-fluid">
-            <div>
-                <a class="navbar-brand"><img  alt=""></a>
-            </div>
+
+
+            <!-- FLOATING TAB -->
+            <div class="tabs">
+                <input class="inp" src="#" type="radio" name="tab" id="home" checked="checked">
+                <label for="home"><i class="fas fa-home"></i></label>
+          
+                <input class="inp" type="radio" name="tab" id="add">
+                <label for="add"><i class="fas fa-plus-circle"><a href="#biography"></a></i> </label>
+          
+                <input class="inp" type="radio" name="tab" id="heart">
+                <label for="heart"><i class="far fa-heart"></i></label>
+          
+                <input class="inp" type="radio" name="tab" id="user">
+                <label for="user"><i class="fas fa-user"></i></label>
+          
+                <div class="bubble"></div>
+          
+                <div class="liquid">
+                  <div class="liquid-tab">
+                    <span class="active"></span>
+                  </div>
+                </div>
+          
+              </div>
+
+
+            <!-- FLOATING TAB CLOSE -->
             <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search album" aria-label="Search" onkeyup="searchAlbum()">
+                <input class="form-control me-2" id="searchbar" type="search" placeholder="Search album" aria-label="Search" onkeyup="searchAlbum()">
                 <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
         </div>
@@ -37,6 +62,21 @@
 
         <div id="sectionAlbum"></div>
 
+
+
+        <!-- SECTION BIO  -->
+
+        <span id="biography"></span>
+
+
+        <section id="bio">
+
+            <h1 class="biohuno">Biography</h1>
+
+
+
+
+        </section>
 
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/script.js"></script>
