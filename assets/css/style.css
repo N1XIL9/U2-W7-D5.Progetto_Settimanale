@@ -6,9 +6,38 @@ body {
 
 /* NAVBAR  */
 
+header {
+    height: 50vh;
+    background-image: url("../img/IMG_0922.JPG");
+    background-position: center;
+    background-size: cover;
+
+}
+
+.contimg {
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
+}
+
+h1 {
+    font-family: 'Staatliches', cursive;
+
+    color: white;
+    padding: 20px;
+}
+
+#bunner {
+    float: inline-end;
+    background-color: rgba(0, 0, 0, 0.862);
+    height: 10vh;
+    width: 100%;
+}
+
 .navbar {
-    box-shadow: 0px 1px 10px 0px rgb(181, 181, 181);
-    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 5px 10px 0px rgb(181, 181, 181);
+    background-color: #151515;
+
 }
 
 .logo {
@@ -96,7 +125,16 @@ audio {
 }
 
 .card {
-    margin: 20px;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.card:hover {
+    box-shadow: 1px 1px 5px 1px black;
+}
+
+.imgCover {
+    border-radius: 20px 20px 0px 0px;
 }
 
 .card-body {

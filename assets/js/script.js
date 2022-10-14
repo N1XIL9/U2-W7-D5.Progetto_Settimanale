@@ -24,6 +24,12 @@ async function chargeApi() {
         </div>
       </div>`;
   }
+
+  const searchAlbum = (query) => {
+    return Object.keys(albumTot).filter((item) => {
+      return item.album.title.includes(query);
+    });
+  };
 }
 
 chargeApi();

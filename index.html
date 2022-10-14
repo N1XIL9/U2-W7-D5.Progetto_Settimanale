@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,400&family=Staatliches&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/228474511d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -15,20 +15,23 @@
 <body>
     
     <header>
-
-        <nav class="navbar bg-gradient">
-            <div class="container-fluid">
-                <div>
-                    <a class="navbar-brand"><img class="logo" src="./assets/img/photo-output-removebg-preview.png" alt=""></a>
-                </div>
-                <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search album" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+        <div class="contimg" >
+            <div id="bunner">
+                <h1>NICOLA LERRA</h1>
             </div>
-        </nav>
-        
+        </div>
     </header>
+     <nav class="navbar">
+        <div class="container-fluid">
+            <div>
+                <a class="navbar-brand"><img  alt=""></a>
+            </div>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search album" aria-label="Search" onkeyup="searchAlbum()">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </nav> 
 
         <!-- SECTION ALBUM  -->
 
