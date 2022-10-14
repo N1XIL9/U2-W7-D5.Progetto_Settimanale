@@ -14,7 +14,7 @@ async function chargeApi() {
 
   for (let index = 0; index < albumTot.length; index++) {
     document.querySelector("#sectionAlbum").innerHTML += `<div class="card" style="width: 15rem;">
-        <img src= "${albumTot[index].album.cover_medium}" class="card-img-top" alt="img">
+        <img class="imgCover" src= "${albumTot[index].album.cover_medium}" class="card-img-top" alt="img">
         <div class="card-body">
           <h5 class="card-title">${albumTot[index].artist.name}</h5>
           <p class="card-text">${albumTot[index].album.title}</p>
@@ -24,24 +24,6 @@ async function chargeApi() {
         </div>
       </div>`;
   }
-}
-
-// `<div class="cover-title"> <img class="cover-album" src = "${albumTot[index].album.cover_medium}">
-//     <audio controls>
-//     <source src="${albumTot[index].preview}" type="audio/ogg"> </div>
-// </audio> `;
-
-// // SEARCH
-// const searchAlbum = (query) => {
-//     let albumSelected = albumTot.filter((book)) => {
-//     return book.title-toLower
-//     }
-// }
-
-{
-  /* <audio controls style="width: 100px;">
-    <source src="${m.preview}" type="audio/ogg">
-</audio> */
 }
 
 chargeApi();

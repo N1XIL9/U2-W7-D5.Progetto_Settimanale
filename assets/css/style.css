@@ -8,6 +8,7 @@ body {
 
 .navbar {
     box-shadow: 0px 1px 10px 0px rgb(181, 181, 181);
+    background-color: rgb(255, 255, 255);
 }
 
 .logo {
@@ -90,6 +91,7 @@ audio {
 
 .card-text {
     text-transform: uppercase;
+    text-align: center;
     font-weight: bold;
 }
 
@@ -101,7 +103,7 @@ audio {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: flex-start;
+    align-items: center;
 }
 
 audio::-webkit-media-controls-play-button,
