@@ -22,15 +22,21 @@ header {
 
 h1 {
     font-family: 'Staatliches', cursive;
-
+    font-size: 60px;
     color: white;
     padding: 20px;
 }
 
+.pbunner {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 10px;
+    color: white;
+
+}
+
 #bunner {
-    float: inline-end;
     background-color: rgba(0, 0, 0, 0.862);
-    height: 10vh;
+    height: 13vh;
     width: 100%;
 }
 
