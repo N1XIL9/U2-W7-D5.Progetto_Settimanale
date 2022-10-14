@@ -280,3 +280,7 @@ audio::-webkit-media-controls-panel {
 .biohuno {
     color: black;
 }
+
+.pbio {
+    text-align: justify;
+}
