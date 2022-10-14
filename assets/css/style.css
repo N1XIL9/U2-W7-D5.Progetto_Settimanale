@@ -247,6 +247,10 @@ audio {
     margin: 15px;
 }
 
+.card:hover .imgCover {
+    box-shadow: 1px 1px 6px 1px black;
+}
+
 
 
 .imgCover {
