@@ -44,18 +44,3 @@ async function chargeApi() {
   });
 }
 chargeApi();
-
-// function searchAlbum() {
-//   let input = document.querySelector("#searchbar").value;
-//   let filter = input.toUpperCase();
-//   let cards = document.querySelectorAll("#sectionAlbum");
-//   for (i = 0; i < cards.length; i++) {
-//     txtValue = [i].textContent || cards[i].innerHTML;
-//     if (txtValue.toUpperCase().index0f(filter) > -1) {
-//       cards[i].style.display = "";
-//     } else {
-//       cards[i].style.display = "none";
-//     }
-//   }
-// }
-// console.log(searchAlbum());
