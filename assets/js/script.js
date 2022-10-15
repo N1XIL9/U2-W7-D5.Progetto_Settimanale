@@ -19,7 +19,7 @@ async function chargeApi() {
           <h5 class="card-title">${albumTot[index].artist.name}</h5>
           <p class="card-text">${albumTot[index].album.title}</p>
             <audio controls>
-                <source src="${albumTot[index].preview}" type="audio/ogg"> </div> 
+                <source src=${albumTot[index].preview} type="audio/ogg"> </div> 
             </audio>
         </div>
       </div>`;
