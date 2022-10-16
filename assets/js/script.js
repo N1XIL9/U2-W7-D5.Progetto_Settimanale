@@ -1,7 +1,14 @@
+//PER PRENDERE UN API E TRASFORMARALA IN UN OGGETTO DA POTER UTILIZZARE IN JS
+// SI USA LA FUNZIONE async.
+// Ho dato un nome alla funzione 'chargeApi' che posizione alla fine di tutto il codice js  e creato una variabile che contiene l'url dell'api utilizzando 'await fetch'
+
 async function chargeApi() {
   let linkArtist = await fetch(`https://striveschool-api.herokuapp.com/api/deezer/search?q=Nicola%20Lerra`);
   let responseText = await linkArtist.json();
   let musicArray = responseText.data;
+
+  // PER SELEZIONARE I TITOLI DEGLI ALBUM CHE MI PIACCIONO  CREO DELLE VARIABILI
+  // E LE CONCATENO '.concat' IN UN VARIABILE 'albumTot' richiamando la prima variabile 'albumOne'
 
   const albumOne = musicArray.slice(0, 4);
   const albumTwo = musicArray.slice(6, 9);
@@ -22,6 +29,7 @@ async function chargeApi() {
       </div>`;
   }
 
+  // CREO LA FUNZIONE SearchBar
   const searchBar = document.getElementById("searchBar");
   searchBar.addEventListener("keyup", (e) => {
     document.querySelector("#sectionAlbum").innerHTML = "";
