@@ -16,17 +16,17 @@ async function chargeApi() {
   const albumFour = musicArray.slice(16, 18);
 
   let albumTot = albumOne.concat(albumTwo, albumThree, albumFour);
+  console.log(albumTot);
   for (let index = 0; index < albumTot.length; index++) {
     document.querySelector("#sectionAlbum").innerHTML += `<div class="card" style="width: 15rem;">
     <div class="card-body">
-    <img class="imgCover" src= "${albumTot[index].album.cover_medium}" class="card-img-top" alt="img">
+      <img class="imgCover" src= "${albumTot[index].album.cover_medium}" class="card-img-top" alt="img">
           <h5 class="card-title">${albumTot[index].artist.name}</h5>
           <p class="card-text">${albumTot[index].album.title}</p>
             <audio controls>
-                <source src=${albumTot[index].preview} type="audio/ogg"> </div> 
-            </audio>
-        </div>
-      </div>`;
+                <source src=${albumTot[index].preview} type="audio/ogg">  
+            </audio>   
+    </div>`;
   }
 
   // CREO LA FUNZIONE SearchBar
@@ -39,14 +39,13 @@ async function chargeApi() {
       if (filter) {
         document.querySelector("#sectionAlbum").innerHTML += `<div class="card" style="width: 15rem;">
                                                                 <div class="card-body">
-                                                                <img class="imgCover" src= "${song.album.cover_medium}" class="card-img-top" alt="img">
+                                                                  <img class="imgCover" src= "${song.album.cover_medium}" class="card-img-top" alt="img">
                                                                       <h5 class="card-title">${song.artist.name}</h5>
                                                                       <p class="card-text">${song.album.title}</p>
                                                                         <audio controls>
-                                                                            <source src=${song.preview} type="audio/ogg"> </div> 
+                                                                            <source src=${song.preview} type="audio/ogg">
                                                                         </audio>
-                                                                    </div>
-                                                                  </div>`;
+                                                              </div>`;
       }
     });
   });
