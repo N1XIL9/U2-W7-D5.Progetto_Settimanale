@@ -10,10 +10,10 @@ async function chargeApi() {
   // PER SELEZIONARE I TITOLI DEGLI ALBUM CHE MI PIACCIONO  CREO DELLE VARIABILI
   // E LE CONCATENO '.concat' IN UN VARIABILE 'albumTot' richiamando la prima variabile 'albumOne'
 
-  const albumOne = musicArray.slice(0, 4);
-  const albumTwo = musicArray.slice(6, 9);
-  const albumThree = musicArray[14];
-  const albumFour = musicArray.slice(16, 18);
+  const albumOne = musicArray.slice(0, 5);
+  const albumTwo = musicArray.slice(11, 14);
+  const albumThree = musicArray[21];
+  const albumFour = musicArray.slice(22, 23);
 
   let albumTot = albumOne.concat(albumTwo, albumThree, albumFour);
   console.log(albumTot);

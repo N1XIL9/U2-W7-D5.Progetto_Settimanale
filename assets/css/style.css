@@ -294,3 +294,32 @@ audio::-webkit-media-controls-panel {
 .pbio {
     text-align: justify;
 }
+
+
+/* FOOTER  */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+
+    height: 55vh;
+    color: white;
+}
+
+.title {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.brands {
+    margin: 5px;
+
+    font-size: 1.8rem;
+    color: white;
+}
